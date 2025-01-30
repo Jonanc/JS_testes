@@ -34,5 +34,8 @@ function console() {
     alert(`Bem vindo ${nomeConsole}`)
 }
 
+function limpar(){
+    exibirTextoNaTela('p1','Digite seu nome:');
+}
 
 let numeroSecreto = gerarNumeroAleatorio(); // aqui a função "Gerar numero aleatorio" está sendo chamada e o codiogo "Return" faz com que ela seja guardada dentro da variavel
