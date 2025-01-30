@@ -6,23 +6,28 @@ function exibirTextoNaTela(tag, informacao){
 function exibirTexto() {
     exibirTextoNaTela('h1','sistema de<br>Boas vindas<br>ao usuario :) '); //Quando eu coloquei h1 ele substitui a "tag" no paramaetro e o conteudo substitui a informacao
     exibirTextoNaTela('p1','Digite seu nome:');
-    exibirTextoNaTelaId('paragrafo2', 'Digite sua idade:')
+    exibirTextoNaTelaId('paragrafo2', 'Digite sua idade:');
+    exibirTextoNaTelaId('paragrafo3', 'Digite Sua Cidade');
+    exibirTextoNaTelaId('paragrafo4', 'Digite Seu Estado');
+    exibirTextoNaTelaId('paragrafo5', 'Digite Seu Cargo De Interesse');
+    exibirTextoNaTelaId('paragrafo6', 'Digite seu CPF');
+    exibirTextoNaTelaId('paragrafo7', 'digite sua Escolaridade');
 }
 
 function exibirTextoNaTelaId(id, informacaoPorId){
-    let tituloid = document.getElementById(id)
-    tituloid.innerHTML = informacaoPorId
+    let tituloid = document.getElementById(id);
+    tituloid.innerHTML = informacaoPorId;
 }
 
-exibirTexto()
+exibirTexto();
 
 function nome () {
-   return document.querySelector('input').value
+   return document.querySelector('input').value;
 }
 
 function chute() {
-    let nomeUsuario = nome()
-    exibirTextoNaTela('p1', `Seja bem-vindo usuario: ${nomeUsuario}`)
+    let nomeUsuario = nome();
+    exibirTextoNaTela('p1', `Seja bem-vindo usuario: ${nomeUsuario}`);
 }
 
 function gerarNumeroAleatorio() {
@@ -30,8 +35,8 @@ function gerarNumeroAleatorio() {
 }
 
 function console() {
-    let nomeConsole = prompt('Digite seu nome')
-    alert(`Bem vindo ${nomeConsole}`)
+    let nomeConsole = prompt('Digite seu nome');
+    alert(`Bem vindo ${nomeConsole}`);
 }
 
 function limpar(){
